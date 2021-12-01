@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/MainCard"
+        android:layout_width="356dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="@dimen/main_card_start_margin"
+        android:layout_marginTop="@dimen/main_card_top_margin"
+        android:layout_marginEnd="@dimen/main_card_start_margin"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="@dimen/main_image_start_margin"
+            android:layout_marginTop="@dimen/main_image_top_margin"
+            android:contentDescription="@string/main_img_description"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/icon_image_foreground"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="184dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="@dimen/main_text_start_margin"
+            android:layout_marginTop="@dimen/main_text_top_margin"
+            android:alpha="54"
+            android:text="@string/note_text"
+            android:textAlignment="textStart"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/main_date_start_margin"
+            android:layout_marginTop="@dimen/main_date_top_margin"
+            android:alpha="54"
+            android:text="@string/note_date"
+            android:textSize="12sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
